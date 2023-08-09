@@ -1,0 +1,375 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homebackgroundimage2{
+    display: none;
+}
+.homebackgroundimage1{
+    width: 100%;
+    height:auto;
+    image-rendering: pixelated;
+    opacity: 1;
+}
+
+.container-fluid{
+    padding-top : 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    padding-left: 60px;
+    padding-right : 60px;
+}
+.nav-item{
+    font-size:large;
+    font-weight: 400;
+}
+.mariyaan{
+
+    font-weight:900;
+    font-size: 35px;
+}
+.restaurant{
+    margin: 0;
+    font-size: 20px;
+}
+#text{
+    display: inline-block;
+}
+.homepagetext{
+    
+    color: black;
+    font-weight:bolder;
+    position: absolute;
+    top: 290px;
+    left: 90px;
+    font-size: 50px;
+
+    
+}
+.input-field-for-address{
+    position: absolute;
+    top: 380px;
+    left: 70px;
+    border: none;
+    height: 55px;
+    width: 500px;
+    text-align: center;
+    outline: none;
+    border-color: black;
+    background-color: white;
+}
+.btn{
+    position: absolute;
+    top: 379px;
+    left : 600px;
+    height: 57px;
+    width: 150px;
+}
+
+#Find-Food{
+
+    color: white;
+    text-decoration: none;
+}
+
+
+#dropdownMenuButton1{
+    top: 380px;
+    left: 580px;
+    background-color: white;
+    color: black;
+    border: none;
+    height: 57px;
+    width: 192px;
+    border-radius: 0px;
+}
+
+/* Carousel Images */
+.food-photos{
+    height: auto; 
+    width: 100%;
+}
+
+/* Country Class and Block */
+.country{
+    margin-top: 90px;
+}
+
+#country-heading{
+    text-align: center;
+    margin-top: 0;
+    font-weight: bolder;
+    padding-bottom: 45px;
+    padding-top: 0;
+}
+
+/* Card Menu Section */
+.card-menu{
+    padding:90px;
+    padding-top : 110px;
+    font-weight: bolder;
+}
+.card-menu-images{
+    padding-bottom: 10px;
+    height: auto;
+    width: 100%;
+}
+.container-card-menu{
+    width: 100%;
+}
+/* End of Card Menu Section */
+
+/* Footer Section */
+
+/* Footer Part A */
+.footer-part-a{
+    border-top: 1px solid #00000038;
+}
+
+.container{
+    padding: 60px;
+    color: #000;
+}
+
+/* End of Footer Part A */
+
+/* Footer part B */
+.footer-part-b{
+    border-top: 1px solid #00000010;
+}
+.social-icon{
+    height: 37px;
+    width:  37px;
+    padding: 10px;
+}
+/* End of the footer Part B */
+
+
+.link-dark{
+   text-decoration: none;
+}
+/* End of the Footer Section */
+
+@media screen and (max-width : 900px){
+   
+    .homepage{
+        align-items: -webkit-center;
+    }
+    
+    .homebackgroundimage1{
+        display: none;
+    }
+    .homebackgroundimage2{
+        display: block;
+        width: 100%;
+        height: 700px;
+
+    }
+    .navbar{
+        padding:0px;
+    }
+    .mariyaan{
+
+        font-weight:900;
+        font-size: 90%;
+    }
+    .restaurant{
+        margin: 0;
+        font-size: 90%;
+    }
+
+    .homepagetext, .input-field-for-address, .btn{      position: absolute;   }
+
+
+    .homepagetext{
+    
+        padding-right: 2%;
+        left: 5%;
+        right: 2%;
+        top: 15%;
+        font-size: 300%;
+    }
+    .input-field-for-address{
+        top: 40%;
+        left: 5%;
+        text-align: left;
+        width: 80%;
+        padding: 2%;
+    }
+    .btn{
+        top: 50%;
+        left: 5%;
+        width: 80%;
+        padding: 2%;
+    }
+    
+    #dropdownMenuButton1{
+        top: 300px;
+        left: 18px;
+        height: 50px;
+        width: 340px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .navbar-toggler-icon    {
+        height: 10px;
+        width: 10px;
+    }
+
+    .navbar-brand{
+        position: relative;
+        padding-right: 0px;
+    }
+    .card-menu-images{
+        object-fit: cover;
+    }
+    .card-menu-item{
+        margin: 0 auto 20% auto;
+    }
+    .card-menu{
+        padding: 60px;
+    }
+    .container-card-menu{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+
+/* Feature Section css */
+
+.features-box{
+    width: 50%;
+    line-height: 2;
+    margin: 2% auto 10% auto;
+    text-align: justify;
+    font-size: small;
+}
+
+.features-row1{
+    margin-bottom: 20%;
+} 
+
+
+.delivery-boy, .eating-boy, .another-boy{
+    width: 220px;
+    height: 180px;
+}
+
+.another-boy, .delivery-boy{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.another-boy, .delivery-boy, .eating-boy{
+    border-radius: 10px;
+    /* box-shadow:1px 1px 1px 1px  black; */
+    box-shadow: 1px 1px 3px grey;
+}
+
+.eating-boy{
+    float : right;
+    margin: 0 0 20px 20px;
+}
+
+.eating-boy:hover, .another-boy:hover, .delivery-boy:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
+.feature-heading-text, .feature-right-heading-text{
+    font-weight: bolder;
+}
+.features{
+    
+    background: #ededed;
+    padding: 50px 0 3px 0;
+    height: fit-content;
+    margin: 0 0 8% 0;
+}
+
+
+/* features1 begins */
+
+.features1, .working{
+       background-color: #2b1e16;
+       margin-bottom: 5%;
+       padding: 0 0 5% 0;
+}      
+
+.features1-holder, .working-holder{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.features1-col{
+    margin: 0 0 0 0;
+    width: 5%;
+}
+
+.features1-title{
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.features1-img{
+    width: 30%;
+}
+.third-img{
+    margin-top: 10%;
+}
+/* end of features1 section */
+
+/* Working section begins */
+.working{
+    background-color: #2b1e16;
+    margin-bottom: 5%;
+    padding: 0 0 5% 0;
+    background-color: #fff;
+    text-align: center;
+    margin: 5% 0 4% 0;
+} 
+.working-holder{
+    color: #000;
+    margin: 4% auto 0 auto;
+}  
+.working-title-to-be-bold, .working-numbers{
+    font-weight:950;
+    text-shadow: 2px black;
+    margin: 5% 0 2% 0 ;
+}
+.working-numbers{
+    color: grey;
+    text-shadow: 2px grey;
+    font-size: 40px;
+}
+/* End of working section */
+
+@media screen and (max-width: 600px){
+    .eating-boy, .another-boy, .delivery-boy{
+        margin: 0 0 20px 0;
+    }
+    
+    .features1-img, .working, .working-holder, .working-img{
+        margin-top: 10%;
+    }
+
+    .title-subtext{
+        padding: 0 2%;
+    }
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

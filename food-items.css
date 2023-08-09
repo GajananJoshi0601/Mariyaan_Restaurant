@@ -1,0 +1,115 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 3% auto;
+    height: fit-content;
+}
+
+.food-titles{
+   text-align: center;
+    margin: 6% auto 0 auto;
+    font-weight: 900;
+}
+.row2 {
+    margin: 1% auto;
+}
+
+/* Footer Section */
+
+/* Footer Part A */
+.footer-part-a, .footer-part-b {
+    border-top: 1px solid #00000038;
+}
+
+/* End of Footer Part A */
+
+/* Footer part B */
+
+.social-icon {
+    height: 37px;
+    width: 37px;
+    padding: 10px;
+}
+
+/* End of the footer Part B */
+
+.link-dark {
+    text-decoration: none;
+}
+
+/* End of the Footer Section */
+
+/* Navbar */
+.container-fluid {
+    padding: 10px 0;
+}
+
+.navbar {
+    padding: 0 60px;
+}
+
+.nav-item {
+    font-size: large;
+    font-weight: 400;
+}
+
+/* Pricing Sections for each piece */
+.piece-price {
+    font-size: 20px;
+}
+
+
+
+/* a tag */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.row2-col, .row1-col {
+    margin-top: 10%;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        text-align: -webkit-center;
+        margin-top: 15%;
+    }
+
+    .card{
+        text-align: left;
+    }
+
+    .container-footer {
+        text-align: left;
+        margin: 5% 0 0 2%;
+    }
+
+    .navbar {
+        padding: 0 40px;
+    }
+
+    .navbar-brand-footer {
+        font-size: large;
+    }
+
+    .footer-second-row{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .navbar-brand {
+        font-size: small;
+    }
+
+    .navbar-brand-footer {
+        font-size: large;
+    }
+}

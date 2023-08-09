@@ -1,0 +1,99 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Navbar */
+    .container-fluid{
+        padding-top : 10px;
+        padding-bottom: 10px;
+    }
+    .navbar{
+        padding-left: 60px;
+        padding-right : 60px;
+    }
+    .nav-item{
+        font-size:large;
+        font-weight: 400;
+    }
+    /* .mariyaan .restaurant{
+        color: white;
+    }
+    .nav-link{
+        color: white;
+    } */
+
+/* Home Page Background Color */
+.HomePage{
+
+    background-color: #B2C8DF;
+}
+
+/* Home Page Background
+.bk_background{
+
+    width: 100%;
+    height:auto;
+    filter: blur(3px)
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* Middle Section of Payment */
+.container{
+    text-align: center;
+    background-color: white;
+    /* margin-top: 110px; */
+    height: 600px;
+    width: 500px;
+    padding: 30px;
+    /* display: inline-block; */
+    /* margin-top: 70px; */
+    margin:  100px auto 100px auto;
+    /* margin-left : 140px; */
+    /* margin-bottom: 0;
+    margin-top: 110px; */
+}
+
+.container1{
+    /* text-align: center; */
+    background-color: white;
+    display: inline-block;
+    
+    height: 600px;
+    width: 500px;
+    padding: 30px;
+  
+    /* display: inline-block; */
+}
+.payment-heading{
+    text-align: center;
+}
+.payment-fields{
+    margin-top: 50px;
+    
+}
+.field{
+    padding: 10px;
+}
+.form-check{
+    padding-left: 33px;
+}
+.form-field{
+    display: inline-block;
+}
+
+
+/* Submit Button */
+.submit-btn{
+    margin-top: 40px;
+}
+
+.payment-option{
+    margin-top: 20px;
+    font-size: small;
+}

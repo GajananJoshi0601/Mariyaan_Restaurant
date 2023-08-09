@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font awsome link -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/31e7cce63e.js"></script>
+
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="media_style.css"> -->
+
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link>
+  <!-- Google Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- javascript Links -->
+  <script src="Payment Slip.js"></script>
+
+
+
+  <title>Mariyaan Restaurant</title>
+
+</head>
+
+<body onscroll="pageScroller();">
+
+  <!-- Navbar -->
+  <nav onscroll="pageScroller();" class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="mariyaan">Mariyaan</span><span class="restaurant"> Restaurant
+          &copy;</span></a>
+
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:kumarwaidande7219@gmail.com">Write For Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:kumarwaidande7219@gmail.com">Get In Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="homepage">
+    <img class="homebackgroundimage1" src="UberWali1.jpg" alt="">
+    <img class="homebackgroundimage2" src="UberWali-second1.jpg" alt="">
+    <a href="" class="homebackgroundimage"></a>
+    <h1 class="homepagetext">A new space of taste...</h1>
+    <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+
+    <!-- <i class="fa fa-map-marker"></i> -->
+    <input onclick="input_border_assigner(1);" onmouseout="input_border_assigner(0);" type="text"
+      class="input-field-for-address" id="find_food" placeholder="Enter Pincode">
+
+
+
+    <!-- dropdown list for shceduling time for delivery -->
+    <!-- <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>  Deliver now
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Deliver Now</a></li>
+        <li><a class="dropdown-item" href="#">Shcedule for later</a></li>
+      </ul> -->
+
+    <button type="button" id="" class="btn btn-dark btn-lg" onclick="validationOfButton();">Find Food</button>
+
+  </div>
+
+  <!-- Card -->
+  <!-- Grid System -->
+
+  <div class="card-menu reveal">
+    <div class="container container-card-menu">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 card-menu-item">
+          <img class="card-menu-images" src="Investment.png" alt="">
+          <h2>Invest & Grow</h4>
+            <a href="#" class="link-dark">Analyze, Invest, Grow</a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 card-menu-item">
+          <img class="card-menu-images" src="Chef.png" alt="">
+          <h2>Cook and Surve</h4>
+            <a href="#" class="link-dark">Apply for chef's post</a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 card-menu-item">
+          <img class="card-menu-images" src="Delivery-Boy-new.jpg" alt="">
+          <h2>Deliver for us</h4>
+            <a href="#" class="link-dark">Sign up to deliver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- End of Grid System and Card -->
+
+  <!-- Carousel  -->
+  <div id="carouselExampleCaptions" class="carousel  carousel-fade reveal" data-bs-touch="true" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img class="food-photos" src="Poha1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Indian Poha</h5>
+          <p>Poha is one of the most loved product of our restaurant.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img class="food-photos" src="Indrayani-Kadam.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Veg Roll</h5>
+          <p>Multiple vegetables in a single roll results in a Veg Roll.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img class="food-photos" src="Vada-Pav final1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Indian Special Vada Pav</h5>
+          <p>Vadapav also known as Indian Burger is a simple receipt involving deep fried patty made of potato,
+            coriander, garlic and few other spices.</p>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End of Carousel  -->
+
+  <!-- How it works begins -->
+
+  <div class="working reveal">
+    <h1 class="working-title-to-be-bold">How it Works</h1>
+    <p class="title-subtext"> In order place an order on Maariyaan restaurant you need to visit our website using  <br>
+    https://kumarwayadande.github.io./mr2/ url. </p>
+    <div class="working-holder">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="working-img" src="visit_restaurant.png" alt="">
+          <h3 class="working-title-to-be-bold"><span class="working-numbers">01 </span>Visit Website</h3>
+          <p>Visit our website using above url. Afterwards you have to enter the pincode of area in which you are residing.
+             When you enter it then you will be redirected to next page.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="working-img" src="select_menu.png" alt="">
+          <h3 class="working-title-to-be-bold"><span class="working-numbers">02 </span>Select Menu</h3>
+          <p>once you come on this page you will encounter some list of available food items in your area defined by pincode you entered.
+              Then you have to select what you want to order.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="working-img" src="wait_for_delivery.png" alt="">
+          <h3 class="working-title-to-be-bold"><span class="working-numbers">03 </span>Wait for Delivery</h3>
+            <p>Once you clicked on a food item then you will be redirected to a page where you can pay all the bill.
+              Then you have to wait until your order is delivered.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of how it works section -->
+
+
+
+  <!-- Features of Maariyan -->
+
+  <div class="features1 reveal">
+    <div class="features1-holder">
+      <div class="row">
+        <div class="col-lg-4 features1-col">
+          <img class="features1-img" src="No_min_order_.jpg" alt="">
+          <h4 class="features1-title">No Minimum Order</h4>
+          <p>Order in for yourself or for the group, with no restrictions on order value</p>
+        </div>
+        <div class="col-lg-4 features1-col">
+          <img class="features1-img" src="Live_order.jpg" alt="">
+          <h4 class="features1-title">Live Order Tracking</h4>
+          <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+        </div>
+        <div class="col-lg-4 features1-col">
+          <img class="features1-img third-img" src="Super_fast_delivery.jpg" alt="">
+          <h4 class="features1-title">Lightning-Fast Delivery</h4>
+          <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of maariyan restaurant features -->
+
+  <!-- Grid System implements contry names -->
+
+  <div id="country_container" class="country container reveal">
+    <h1 id="country-heading">Countries with Maariyaan Restaurant</h3>
+      <div class="">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <p> Australia </p>
+            <p> Belgium</p>
+            <p> Bolivia</p>
+            <p> Canada</p>
+            <p> Chile</p>
+            <p> Costa Rica</p>
+            <p> Dominican Republic</p>
+            <p> Ecuador</p>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <p>El Salvador</p>
+            <p>France</p>
+            <p>Germany</p>
+            <p>Guatemala</p>
+            <p>Ireland</p>
+            <p> Italy</p>
+            <p>Japan</p>
+            <p>Kenya</p>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <p>exico</p>
+            <p>etherlands</p>
+            <p>ew Zealand</p>
+            <p>anama</p>
+            <p>oland</p>
+            <p>ortugal</p>
+            <p>Réunion</p>
+            <p>outh Africa</p>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-4">
+            <p>pain</p>
+            <p>Sri Lanka</p>
+            <p>Sweden</p>
+            <p>Switzerland</p>
+            <p>Taiwan (ROC)</p>
+            <p>United Kingdom</p>
+            <p>United States</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- End of grid System -->
+  <!-- Footer -->
+
+
+  <div class="footer reveal">
+
+    <div class="footer-part-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-6">
+            <a class="navbar-brand text-dark" href="#"><span class="mariyaan">Mariyaan</span><span class="restaurant">
+                Restaurant &copy;</span></a>
+          </div>
+
+          <div class="col-lg-3">
+
+            <p><a href="#" class="link-dark">Get Help</a></p>
+            <p><a href="#" class="link-dark">Buy gift cards</a></p>
+            <p><a href="#" class="link-dark">Add your restaurant</a></p>
+            <p><a href="#" class="link-dark">Sign up to deliver</a></p>
+            <p><a href="#" class="link-dark">Create a business account</a></p>
+            <p><a href="#" class="link-dark">Promotions</a></p>
+          </div>
+
+          <div class="col-lg-3">
+            <p><a href="#" class="link-dark">Restaurants near me</a></p>
+            <p><a href="#" class="link-dark">View all cities</a></p>
+            <p><a href="#country_container" class="link-dark">View all countries</a></p>
+            <p><a href="#" class="link-dark">Pickup near me</a></p>
+            <p><a href="#" class="link-dark">About Uber Eats</a></p>
+            <p><a href="#" class="link-dark">English</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-part-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="https://m.facebook.com/gajanan.joshi.35110"><img class="social-icon" src="facebook (1).png"
+                alt=""></a>
+            <a href="https://www.instagram.com/oye_gj_/"><img class="social-icon" src="instagram (1).png"
+                alt=""></a>
+            <a href="mailto:gajananjoshi0601@gmail.com"><img class="social-icon" src="email.png" alt=""></a>
+            <a href=""></a>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="link-dark">Privacy Policy</a>
+          </div>
+
+          <div class="col-lg-2">
+            <a href="#" class="link-dark">Terms</a>
+          </div>
+
+          <div class="col-lg-2">
+            <a href="#" class="link-dark">Pricing</a>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row">
+          <div class="col-lg-6">
+
+          </div>
+          <div class="col-lg-6">
+            <p>This site is protected by reCAPTCHA and the Google <a href="#" class="link-dark">Privacy Policy</a> and
+              <a href="#" class="link-dark">Terms of Service</a> apply.
+            </p>
+            <p>Made with ❤️ by GAJANAN JOSHI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of the Footer -->
+  <script src="index.js"></script>
+</body>
+
+</html>
